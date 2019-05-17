@@ -2,14 +2,23 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Permanent+Marker&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset ="utf-8">
   </head>
-  <body><CENTER>
-    <p id="title">Change my color!</p>
-    <button onclick="func(1)">blue</button>
-    <button onclick="func(2)">green</button>
-    <button onclick="func(3)">red</button>
-  </CENTER></body>
+  <body>
+    <CENTER>
+      <title>COLORS & SOUNDS!!</title>
+      <p id="title">Change my color!</p>
+      <button onclick="func(1)">blue</button>
+      <button onclick="func(2)">green</button>
+      <button onclick="func(3)">red</button>
+      <br>
+      <input type="checkbox" id="switch" class="toggle-switch" onclick="toggleSound()"><br>sound</input>
+      <audio loop id="blue" src="./sounds/blue.mp3"></audio>
+      <audio loop id="green" src="./sounds/green.mp3"></audio>
+      <audio loop id="red" src="./sounds/red.mp3"></audio>
+    </CENTER>
+  </body>
 </html>
 <script src="app.js"></script>

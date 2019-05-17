@@ -14,7 +14,6 @@ button{
   font-family: 'Concert One', cursive;
   background-color: rgb(0,0,0,0.15);
   border-style: none;
-  /* padding: 20px 60px; */
   width: 200px;
   height: 90px;
   margin-bottom: 5.2px;
@@ -32,4 +31,34 @@ button:focus{
   font-size: 60px;
   margin-top: 15%;
   text-shadow: 1px 1px black;
+}
+input[type=checkbox].toggle-switch{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 3em;
+  width: 6em;
+  border-radius: 3em;
+  background-color: grey;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  position: relative;
+}
+input[type=checkbox].toggle-switch:checked{
+  background-color: blue;
+}
+input[type=checkbox].toggle-switch::after{
+  content: '';
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border-radius: 3em;
+  position: absolute;
+  transform: scale(.8);
+  left: 0;
+  transition: .1s ease-in-out;
+}
+input[type=checkbox].toggle-switch:checked::after{
+  left: 3em;
 }
